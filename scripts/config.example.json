@@ -1,0 +1,15 @@
+{
+  "adb": "",
+  "serial": "",
+  "package": "com.jingdong.app.mall",
+  "base_width": 2136,
+  "base_height": 3200,
+  "max_panel_rounds": 12,
+  "max_scratch": 8,
+  "max_popup_rounds": 6,
+  "max_card_rounds": 10,
+  "browse_wait": 8.5,
+  "popup_browse_wait": 9.0,
+  "daily_guard": true,
+  "_comment": "复制本文件为 config.json 后填写。adb 留空会自动探测 PATH 与常见安装目录；serial 留空表示使用唯一连接的设备（多设备时填 adb devices 里的序列号）。"
+}
