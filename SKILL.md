@@ -18,7 +18,7 @@ H5 权益中心文案会轮播、弹窗会反复遮挡、任务面板会在页�
 ## 安装
 
 ```bash
-git clone https://github.com/niuding/jd-adb-device-beans-skill.git \
+git clone https://github.com/niuding/jd-pad-auto-signin.git \
   ~/.workbuddy/skills/jd-adb-device-beans
 ```
 
@@ -49,6 +49,10 @@ python jd_daily_run.py               # 完整跑一遍；当天已成功则自�
 python jd_daily_run.py --force       # 忽略每日 guard，手动补跑
 python jd_daily_run.py --phases sign,panel   # 只跑指定阶段
 ```
+
+Windows 上不碰命令行也行：直接双击 `scripts/run-daily.bat`。它会自动从
+`config.example.json` 生成 `config.json`（单设备、adb 在 PATH 或常见目录时无需填任何配置），
+跑完停在窗口上让人看结果。
 
 退出码：`0` 成功或当天已完成 / `2` 预检失败（**不写 guard**）/ `3` 页面无法加载或
 运行异常（同样不写 guard）。失败不标记完成，下一次定时触发才会重试。
